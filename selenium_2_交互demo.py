@@ -5,6 +5,7 @@
 # @Project : pythonProjectPc
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
+import time
 
 path = Service('chromedriver.exe')
 browser = webdriver.Chrome(service=path)
@@ -12,7 +13,7 @@ browser = webdriver.Chrome(service=path)
 url = 'https://www.baidu.com/'
 browser.get(url)
 
-import time
+
 # 睡两秒
 time.sleep(2)
 
