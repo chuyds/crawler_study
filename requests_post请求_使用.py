@@ -24,3 +24,8 @@ content = response.text
 import json
 obj = json.loads(content)
 print(obj)
+
+# 总结
+# （1）post请求 是不需要编解码
+# （2）post请求的参数是data
+# （3）不需要请求对象的定制
