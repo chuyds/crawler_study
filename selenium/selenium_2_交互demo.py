@@ -7,7 +7,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 import time
 
-path = Service('chromedriver.exe')
+path = Service('../chromedriver.exe')
 browser = webdriver.Chrome(service=path)
 
 url = 'https://www.baidu.com/'

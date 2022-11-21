@@ -59,6 +59,7 @@ with open('code.jpg', 'wb') as fp:
     fp.write(content_code)
 
 # 获取了验证码的图片之后，下载到本地，然后观察验证码，将验证码输入到控制台
+# 有插件可以自动识别图片上的验证码，比如超级鹰等
 code_name = input('请输入你的验证码')
 
 data_post = {

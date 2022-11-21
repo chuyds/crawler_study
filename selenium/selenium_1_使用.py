@@ -8,7 +8,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
 
 
-path = Service('chromedriver.exe')
+path = Service('../chromedriver.exe')
 browser = webdriver.Chrome(service=path)
 
 url = 'https://www.baidu.com/'
