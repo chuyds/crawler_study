@@ -25,6 +25,7 @@ class DyttSpider(scrapy.Spider):
 #           https://dy.dytt8.net/html/gndy/dyzz/20221105/63123.html
 #           /html/newgame/20180124/56181.html
             url = 'https://dy.dytt8.net' + str(src)
+            #   self.dyttFun注意不要添加（），如self.dyttFun()是错误形式
             yield scrapy.Request(url = url, callback = self.dyttFun, meta = {'name' : name})
 
     def dyttFun(self, response):
